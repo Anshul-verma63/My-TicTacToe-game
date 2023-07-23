@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  height: 50px;
+  background-color: rgb(41, 38, 41);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  margin-top: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  font-size: 5vw;
+  position: relative;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  background-color: rgb(196, 196, 236);
+}
+
+.bt-0 {
+  border-top: 2px solid black;
+}
+.bb-0 {
+  border-bottom: 2px solid black;
+}
+.bl-0 {
+  border-left: 2px solid black;
+}
+.br-0 {
+  border-right: 2px solid black;
+}
+
+.gameInfo {
+  margin-left: 30px;
+}
+
+.imgBox img {
+  width: 0px;
+  transition: all 0.5s;
+}
+
+#reset {
+  padding: 5px 10px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+}
+
+.info {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.infoBox {
+  margin-top: 30px;
+}
+
+.line {
+  width: 30vw;
+  height: 4px;
+  position: absolute;
+  background-color: blueviolet;
+}
+
+@media (max-aspect-ratio: 9/11) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+  .gameInfo h1 {
+    font-size: 17px;
+  }
+  .info {
+    font-size: 1.1rem;
+    margin-right: 20px;
+    font-weight: 600;
+  }
+  #reset {
+    padding: 5px 8px;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+#cong {
+  font-style: italic;
+  font-size: 2rem;
+  margin-top: 20px;
+  letter-spacing: 3px;
+}
